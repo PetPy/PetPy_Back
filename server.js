@@ -7,5 +7,5 @@ app.listen(port, function () {
 });
 
 app.get("/", function (req, res) {
-	res.send("PetPy Homepage");
+	res.sendFile(__dirname + "/index.html");
 });
