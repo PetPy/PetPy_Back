@@ -1,22 +1,27 @@
 {
-  "name": "petpy_back",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PetPy/PetPy_Back.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PetPy/PetPy_Back/issues"
-  },
-  "homepage": "https://github.com/PetPy/PetPy_Back#readme",
+	"name": "petpy_back",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PetPy/PetPy_Back.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/PetPy/PetPy_Back/issues"
+	},
+	"homepage": "https://github.com/PetPy/PetPy_Back#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^4.9.1",
+    "nodemon": "^2.0.20"
   }
 }
