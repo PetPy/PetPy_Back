@@ -6,10 +6,15 @@ app.listen(port, function () {
 	console.log("listening on " + port);
 });
 
-app.get("/", function (req, res) {
-	res.sendFile(__dirname + "/index.html");
+function isLogin(req, res, next) {
+	if (req.user) next();
+	else res.render("login.ejs");
+}
+
+app.get("/", isLogin, (req, res) => {
+	res.render("home.ejs");
 });
 
-app.get("/login", (req, res) => {
-	res.render("login.ejs");
+app.get("/register", (req, res) => {
+	res.render("register.ejs");
 });
