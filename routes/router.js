@@ -4,9 +4,12 @@ function isLogin(req, res, next) {
 	else res.render("login.ejs");
 }
 router.get("/", isLogin, (req, res) => {
-	res.render("home.ejs");
+	res.render("login.ejs");
 });
 router.get("/register", (req, res) => {
 	res.render("register.ejs");
+});
+router.get("/home", (req, res) => {
+	res.render("home.ejs");
 });
 module.exports = router;
